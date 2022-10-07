@@ -1,4 +1,38 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# How to run this project
+This is a cseits website development project either control and automation laboratory or system and cybernatics laboratory. This project uses laravel as the main framework and nodejs as support for additional packages. The package we use is laravel sail to solve the problem of different dependencies using docker, laravel breeze to solve authentication problems and yarn to solve development process problems. We can run this project without any problem if we have same version package otherwise we suggest to try laravel sail to avoid any possible package conflicts. The following is the package version that we use.
+- PHP:8.1.11
+- Laravel:9.34.0
+- Yarn:1.22.19
+- Mysql:8.0.30
+
+# Laravel Sail
+See installation guide [here](https://laravel.com/docs/9.x/sail). To install laravel sail we need docker, here is a useful link if we want to install docker ([Windows](https://sh-tsang.medium.com/tutorial-docker-installation-in-wsl-2-of-windows-f4471fc3e1d4), [Linux](https://docs.docker.com/engine/install/ubuntu/), [MacOS](https://docs.docker.com/desktop/install/mac-install/)). If you use windows you need install wsl and linux distros as well. After that we need any [composer](https://getcomposer.org/) version.
+
+# Run
+* clone this project [https://github.com/vannezha/controlsystemlab.git](https://github.com/vannezha/controlsystemlab.git)
+* install package using composer via terminal/powershell
+  ```
+  composer install --ignore-platform-req=ext-fileinfo
+  ```
+* make .env file and copy .env.example content to .env then save it
+* (optional) if we on linux maybe we need give permission to the this whole folder
+  ```
+  sudo chmod 777 -R .
+  ```
+* open our terminal and run this command to build laravel sail, for windows just open powershell and enter bash mode and do the same thing.
+  ```
+  vendor/bin/sail up
+  ```
+  if there is problem about permission, try to give root access using sudo and wait until the process is complete
+  ```
+  sudo vendor/bin/sail up
+  ```
+* open localhost:8000 as our main host, and localhost:8001 as our phpmyadmin
+
+# more
+for further sail command please read the original documentation [here](https://laravel.com/docs/9.x/sail)
+
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -63,4 +97,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
