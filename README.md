@@ -27,7 +27,7 @@ See installation guide [here](https://laravel.com/docs/9.x/sail). To install lar
   ```
   sudo vendor/bin/sail up
   ```
-* open localhost:8000 as our main host, and localhost:8001 as our phpmyadmin
+* open localhost:80 as our main host, and localhost:8001 as our phpmyadmin
 
 # more
 for further sail command please read the original documentation [here](https://laravel.com/docs/9.x/sail)
